@@ -8,9 +8,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="content.css">
+  
+   <style>
+      
+        .add-user-button {
+            background-color: #87CEFA;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px; 
+            cursor: pointer;
+        }
+    </style>
     
 </head>
-<body>
+<body style="background-color: white;">
+
   <div class="navbar">
         <img src="images/icon.png" alt="icon" class="icon">
         <div class="aa">
@@ -26,7 +39,7 @@
            </div>
     </div>
 
-//<!-- writer your code here -->
+
 <div class="row">
                 <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
 
@@ -35,8 +48,10 @@
                     <hr>
                     <div class="container text-left">
 
-                        <a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
-     New User</a>
+                         <form action="addUser.jsp" method="post">
+      
+        <input type="submit" value="Add New User" class="add-user-button">
+    </form>
                     </div>
                     <br>
                     <table class="table table-bordered">
@@ -51,7 +66,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--   for (Todo todo: todos) {  -->
+                           
                           
                                 <tr>
                                     <td>  </td>
@@ -136,7 +151,7 @@
 
 
                           
-                            <!-- } -->
+                          
                         </tbody>
 
                     </table>

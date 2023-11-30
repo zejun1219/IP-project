@@ -8,6 +8,21 @@
 
 <link href="css/content.css" rel="stylesheet" >
 <link href="css/landingPage.css" rel="stylesheet" >
+<style>
+
+        .background-image {
+            background-image: url("images/EARTH.png");
+            background-repeat: no-repeat;
+            background-size: cover; /* Use cover to fill the div */
+            height: 400px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+</style>
+
 </head>
 
     
